@@ -1,15 +1,5 @@
-import mysql from 'mysql2/promise';
+import { connection } from "../utils/MysqlConnection.js";
 import bcrypt from 'bcrypt';
-
-const config = {
-    host: 'localhost',
-    user: 'root',
-    port: 3306,
-    password: 'admin123',
-    database: 'pajaritosocial'
-}
-
-const connection = await mysql.createConnection(config);
 
 export class UserModel {
     static async register({ username, email, password }) {

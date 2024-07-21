@@ -19,3 +19,21 @@ Content-Type: application/json
     "email": "alexdsfit2o@gmail.com",
     "password": "3242342"
 }
+
+
+###Crear un post 
+POST http://localhost:3000/api/posts/create
+Content-Type: application/json
+
+{
+    "email_user":"angel@gmail.com",
+    "post":"Hola este es mi primer post"
+}
+
+###Obtener todos los post
+POST http://localhost:3000/api/posts/get
+Content-Type: application/json
+
+{
+    "email_user":"angel@gmail.com"
+}
