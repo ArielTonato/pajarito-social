@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Pajarito Social</title>
+</head>
+
+<body>
+    <header class="header">
+        <picture class="logo">
+            <source srcset="./public/logo-x.png" type="image/png">
+            <img src="../public/logo-x.png" alt="Pajarito Social">
+        </picture>
+        <a>Tus Publicaciones</a>
+        <button class="button-header button-normal">Cerrar Sesion</button>
+    </header>
+    <main class="container">
+        <form action="" class="form">
+            <div class="form-post">
+                <textarea name="post" id="post" placeholder="Haz una publicacion..."></textarea>
+                <button class="button-publish button-send">Publicar</button>
+            </div>
+        </form>
+        <div class="posts-container">
+            <h2 class="posts-title">Publicaciones</h2>
+            <section class="posts" id="posts">
+                <article class="post">
+                    <div class="post-header">
+                        <img src="./public/avatar.png" alt="Avatar">
+                        <div>
+                            <h3>Nombre del Usuario</h3>
+                            <p>Fecha de publicacion</p>
+                        </div>
+                    </div>
+                    <p class="post-content">Contenido de la publicacion</p>
+                    <div class="post-footer">
+                        <button class="button-like button-send">Me Gusta</button>
+                        <button class="button-comment button-normal">Comentar</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

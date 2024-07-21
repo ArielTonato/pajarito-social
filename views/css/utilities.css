@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #1DA1F2;
+    --secondary-color: #14171A;
+    --border-color: #f5f8fa60;
+    --tertiary-color: #657786;
+    --dark-gray-color: #AAB8C2;
+    --light-gray-color: #E1E8ED;
+    --white-color: #f5f8fa;
+    --white-color-degraded: #f5f8face;
+}
+.button-normal {
+    background-color: var(--secondary-color);
+    text-align: center;
+    border: 1px solid var(--border-color);
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: var(--primary-color);
+        color: var(--white-color);
+        cursor: pointer;
+    }
+}
+
+.button-send{
+    border-radius: 10px;
+    padding: 10px;
+    background: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background: #0d8bf2;
+    }
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}

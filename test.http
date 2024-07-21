@@ -1,0 +1,21 @@
+GET http://localhost:3000
+###Registrar un usuario
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username":"alex",
+    "email": "alexitotn21@gmail.com",
+    "password": "123456"
+}
+
+
+###Iniciar sesión
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "username":"alex",
+    "email": "alexdsfit2o@gmail.com",
+    "password": "3242342"
+}
