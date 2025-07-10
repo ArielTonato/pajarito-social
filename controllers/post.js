@@ -1,6 +1,9 @@
 import { validatePost } from "../schemes/post.js";
 import { PostModel } from "../models/post.js";
 import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export class PostController {
     static async createPost(req, res) {
